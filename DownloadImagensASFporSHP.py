@@ -74,8 +74,8 @@ def save_results_to_csv(results, filename):
 #Função que define aonde e o que será feito
 def main():
     # Definição dos diretórios
-    dirs = "C:\\Users\\grazi\\INPE\\BaciasPetroleo"
-    shp_dir = "C:\\Users\\grazi\\INPE\\BaciasPetroleo"
+    dirs = "caminho para o arquivo"
+    shp_dir = "caminho para o arquivo"
 
     # Leitura dos arquivos shapefile e criação da Área de Interesse (AOI)
     polygons = read_shapefiles(shp_dir)
@@ -92,7 +92,7 @@ def main():
 
     # Parâmetros da pesquisa, trocar conforme a necessidade
     search_opts = {
-        'platform': asf.PLATFORM.SENTINEL1,
+        'platform': asf.PLATFORM.SENTINEL1,  
         'beamMode': asf.BEAMMODE.IW,
         'polarization': asf.POLARIZATION.VV, 
         'start': '2024-01-01T00:00:00Z',
