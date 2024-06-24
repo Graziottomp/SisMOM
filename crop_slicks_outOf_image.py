@@ -64,9 +64,9 @@ def mask_polygons_in_image(image_file, polygons):
         return masked_image, out_meta
 
 # Uso do exemplo:
-dir_img = 'C:\\Users\\grazi\\Cantarell\\'
+dir_img = 'caminho para o arquivo'
 image_file = glob.glob(f"{dir_img}*.tif")[0]
-shp_file = 'C:\\Users\\grazi\\Cantarell\\21\\OilSlicks_Cantarell_GEOG_18052022_01_21.shp'
+shp_file = 'caminho para o arquivo.shp'
 output_file = os.path.join(dir_img, '_output.tif')
 
 polygons = gpd.read_file(shp_file)
