@@ -1,6 +1,6 @@
 #_________________________________________________________________________________________
-#Corta cada polígono (separando os multipolígonos) e cria um arquivo .shp e um tiff contendo os valores dos pixels
-#dentro de cada um deles e com valor NaN envolta deles
+#Corta cada polígono (separando os multipolígonos) e cria um arquivo .shp e um tiff contendo
+#os valores dos pixels dentro de cada um deles e com valor NaN envolta deles
 #_________________________________________________________________________________________
 # MIT License
 # 
@@ -137,7 +137,7 @@ def getSlickPolyFromMultiPolygon(dirImg, dataBase, shpFilePath, tiffFilePath):
     return results
 
 
-dirImg = 'C:\\Users\\grazi\\Cantarell\\'
+dirImg = 'caminho para o arquivo'
 dataBase = glob.glob(f'{dirImg}\\*.csv')[0]
 shpFilePath = glob.glob(f'{dirImg}\\*.shp')[0]
 tiffFilePath = glob.glob(f"{dirImg}*.tif")[0]
