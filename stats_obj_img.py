@@ -190,14 +190,14 @@ def stats_obj_img(fname_img_pol, fname_img, img_name, class_data):
 
 def main():
     # Diretório contendo as imagens
-    img_dir = 'C:\\Users\\grazi\\Cantarell\\21'
-    class_data_csv = 'C:\\Users\\grazi\\Cantarell\\Base de Dados Cantarell Sentine1.csv'
+    img_dir = 'caminho para o arquivo'
+    class_data_csv = 'caminho para o arquivo.csv'
 
     # Carregar dados de classe
     class_data = load_class_data(class_data_csv)
 
     # Nome do arquivo CSV para salvar resultados
-    csv_filename = "C:\\Users\\grazi\\Cantarell\\Cantarell_object_background_stats_medio.csv"
+    csv_filename = "caminho para o arquivo.csv"
 
     # Verifica se o arquivo CSV existe, se não, cria e escreve o cabeçalho
     if not os.path.isfile(csv_filename):
