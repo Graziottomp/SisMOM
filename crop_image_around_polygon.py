@@ -1,5 +1,5 @@
-#_________________________________________________________________________________________
-# #Substitui o valor dos pixels dentro de cada poligonos por NaN e deixa o valor dos pixels ao redor deles intacto 
+#Substitui o valor dos pixels dentro de cada poligonos por NaN e deixa o valor dos pixels
+#ao redor deles intacto 
 #_________________________________________________________________________________________
 # MIT License
 # 
@@ -89,8 +89,8 @@ def create_masked_image(image, polygon, transform):
     return masked_image
 
 # Uso do exemplo:
-dir_img = 'C:\\Users\\grazi\\Cantarell\\21'
-image_file = f'{dir_img}\\imagem_21_poligonos_NaN.tif'
+dir_img = 'caminho para o arquivo'
+image_file = f'{dir_img}caminho para o arquivo.tif'
 shp_dir = f'{dir_img}'
 buffer_percent = 0.05  # 5% de buffer ao redor do polígono
 
